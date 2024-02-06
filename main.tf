@@ -58,7 +58,8 @@ module "autoscaling" {
   instance_type    = "t2.medium"      # Replace with your desired instance type
   subnet_ids       = tolist(module.networking.dev_proj_1_public_subnets)
 }
+/*
 module "rds" {
   source = "./modules/OracleRDS"
-}
+}*/
 
